@@ -5,7 +5,8 @@ using UnityEngine;
 public class RubyController : MonoBehaviour
 {
     public int maxHealth = 5;
-    public int currentHealth;
+    public int health { get { return currentHealth; } }
+    int currentHealth;
 
     public float speed = 3.0f;
 
