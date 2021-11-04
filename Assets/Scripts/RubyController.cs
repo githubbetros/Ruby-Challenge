@@ -7,8 +7,7 @@ public class RubyController : MonoBehaviour
     public int maxHealth = 5;
     int currentHealth;
 
-    public int maxSpeed;
-    int currentSpeed;
+    public float speed = 3.0f;
 
     Rigidbody2D rigidbody2d;
     float horizontal;
@@ -19,8 +18,6 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
 
         currentHealth = maxHealth;
-
-        currentSpeed =ma
     }
 
     // Update is called once per frame
@@ -33,8 +30,8 @@ public class RubyController : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 position = rigidbody2d.position;
-        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
-        position.y = position.y + 3.0f * vertical * Time.deltaTime;
+        position.x = position.x + speed * horizontal * Time.deltaTime;
+        position.y = position.y + speed * vertical * Time.deltaTime;
         rigidbody2d.MovePosition(position);
     }
 
