@@ -7,6 +7,9 @@ public class RubyController : MonoBehaviour
     public int maxHealth = 5;
     int currentHealth;
 
+    public int maxSpeed;
+    int currentSpeed;
+
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
@@ -16,6 +19,8 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
 
         currentHealth = maxHealth;
+
+        currentSpeed =ma
     }
 
     // Update is called once per frame
