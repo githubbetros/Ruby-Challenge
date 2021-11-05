@@ -57,6 +57,7 @@ public class RubyController : MonoBehaviour
                 return;
 
             isInvincible = true;
+            
             invincibleTimer = timeInvincible;
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
