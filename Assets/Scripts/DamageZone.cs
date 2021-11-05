@@ -9,5 +9,8 @@ public class DamageZone : MonoBehaviour
         RubyController controller = other.GetComponent<RubyController>();
 
         if(game)
+        {
+            controller.ChangeHealth(-1);
+        }
     }
 }
