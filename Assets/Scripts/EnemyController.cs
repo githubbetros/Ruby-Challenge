@@ -52,21 +52,25 @@ public class EnemyController : MonoBehaviour
     {
         Vector2 position = rigidbody2D.position;
 
-        if (vertical)
-        {
-            position.y = position.y + Time.deltaTime * speed * direction;
-        }
-        else
-        {
-            position.x = position.x + Time.deltaTime * speed * direction;
-        }
-
-        rigidbody2D.MovePosition(position);
-
         if (!broken)
         {
             return;
         }
+
+        if (vertical)
+        {
+            position.y = position.y + Time.deltaTime * speed * direction;
+            animator.SetFloat("Move X", 0);
+            animator.SetFloat("Move Y", direction);
+        }
+        else
+        {
+            position.x = position.x + Time.deltaTime * speed * direction;
+            animator.SetFloat("Move X", direction);
+            animator.SetFloat("Move Y", 0);
+        }
+
+        rigidbody2D.MovePosition(position);
     }
 
     void OnCollisionEnter2D(Collision2D other)
