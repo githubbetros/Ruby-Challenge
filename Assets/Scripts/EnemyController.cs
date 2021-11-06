@@ -10,8 +10,7 @@ public class EnemyController : MonoBehaviour
 
     public bool vertical;
 
-    public bool broken;
-
+    bool broken = true;
     float timer;
     int direction = 1;
 
@@ -23,7 +22,6 @@ public class EnemyController : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
-        broken = true;
     }
 
     void Update()
