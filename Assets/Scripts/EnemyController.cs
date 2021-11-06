@@ -31,10 +31,13 @@ public class EnemyController : MonoBehaviour
         {
             direction = -direction;
             timer = changeTime;
+            animator.SetFloat("Move X", 0);
+            animator.SetFloat("Move Y", direction);
         }
-
-        animator.SetFloat("Move X", 0);
-        animator.SetFloat("Move Y", direction);
+        else if(timer > 0)
+        {
+            
+        }
     }
 
     // Update is called once per frame
