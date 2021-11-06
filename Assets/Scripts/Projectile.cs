@@ -12,25 +12,20 @@ public class Projectile : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
-    public void Launch(Vector2 direction, float force)
+    public void Launch (Vector2 direction, float force)
     {
         rigidbody2d.AddForce(direction * force);
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        EnemyController e = other.collider.GetComponent<EnemyController>();
-        if (e != null)
-        {
-            e.Fix();
-        }
-
+        Debug.Log("Projectile collision with " + other.gameObject);
         Destroy(gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
