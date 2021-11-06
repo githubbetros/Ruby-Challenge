@@ -12,7 +12,7 @@ public class RubyController : MonoBehaviour
     bool isInvincible;
     float invincibleTimer;
 
-    public 
+    public GameObject projectilePrefab;
 
     public float speed = 3.0f;
 
