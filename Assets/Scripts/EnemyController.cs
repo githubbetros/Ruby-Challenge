@@ -26,24 +26,17 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
+        if (!broken)
+        {
+            return;
+        }
+
         timer -= Time.deltaTime;
 
         if (timer < 0)
         {
             direction = -direction;
             timer = changeTime;
-            animator.SetFloat("Move X", 0);
-            animator.SetFloat("Move Y", direction);
-        }
-        else
-        {
-            animator.SetFloat("Move X", direction);
-            animator.SetFloat("Move Y", 0);
-        }
-
-        if (!broken)
-        {
-            return;
         }
     }
 
