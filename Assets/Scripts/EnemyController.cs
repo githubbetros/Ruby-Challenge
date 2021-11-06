@@ -34,9 +34,10 @@ public class EnemyController : MonoBehaviour
             animator.SetFloat("Move X", 0);
             animator.SetFloat("Move Y", direction);
         }
-        else if(timer > 0)
+        else
         {
-            
+            animator.SetFloat("Move X", direction);
+            animator.SetFloat("Move Y", 0);
         }
     }
 
