@@ -1327,7 +1327,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.54, y: -1.51, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 624766619}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1821,6 +1822,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4881987948775505424}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &624766618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 624766619}
+  m_Layer: 0
+  m_Name: Listener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &624766619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624766618}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 421703284}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &696679908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19611,6 +19642,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 72129006915806242, guid: a5deebbe78f49c64ba53c3e219e089a4,
         type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
+    - target: {fileID: 72129006915806242, guid: a5deebbe78f49c64ba53c3e219e089a4,
+        type: 3}
       propertyPath: hitEffect
       value: 
       objectReference: {fileID: 5286957636507342714, guid: 03c3ff4342c1d20419f0df372a0fb519,
@@ -19620,6 +19656,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 72129006915806242, guid: a5deebbe78f49c64ba53c3e219e089a4,
+        type: 3}
+      propertyPath: throwSound
+      value: 
+      objectReference: {fileID: 8300000, guid: b2edfd40873655249ba0e01a5cf705be, type: 3}
     - target: {fileID: 72129006915806242, guid: a5deebbe78f49c64ba53c3e219e089a4,
         type: 3}
       propertyPath: projectilePrefab
