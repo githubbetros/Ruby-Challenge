@@ -91,10 +91,10 @@ public class RubyController : MonoBehaviour
         position.y = position.y + speed * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
-        
+
         if (Input.GetKey("escape"))
         {
-            Application.();
+            Application.Quit();
         }
     }
 
