@@ -10,6 +10,8 @@ public class EnemyController : MonoBehaviour
 
     public bool vertical;
 
+    public ParticleSystem smokeEffect;
+
     bool broken = true;
     float timer;
     int direction = 1;
