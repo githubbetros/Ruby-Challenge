@@ -92,7 +92,7 @@ public class RubyController : MonoBehaviour
 
         rigidbody2d.MovePosition(position);
         
-        if(Input.GetKey("escape"))
+        if (Input.GetKey("escape"))
         {
             Application.();
         }
