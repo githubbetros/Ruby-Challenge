@@ -84,7 +84,7 @@ public class RubyController : MonoBehaviour
 
             animator.SetTrigger("Hit");
 
-            Instantiate 
+            
 
             invincibleTimer = timeInvincible;
         }
