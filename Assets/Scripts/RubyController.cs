@@ -56,9 +56,7 @@ public class RubyController : MonoBehaviour
             invincibleTimer -= Time.deltaTime;
             if (invincibleTimer < 0)
             {
-                isInvincible = false;
-                hitEffect.Stop();
-            }
+                isInvincible = false;            }
         }
         if (Input.GetKeyDown(KeyCode.C))
         {
