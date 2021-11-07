@@ -84,6 +84,8 @@ public class RubyController : MonoBehaviour
 
             animator.SetTrigger("Hit");
 
+            Instantiate 
+
             invincibleTimer = timeInvincible;
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
