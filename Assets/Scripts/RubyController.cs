@@ -82,8 +82,6 @@ public class RubyController : MonoBehaviour
 
             isInvincible = true;
 
-            GameObject = 
-
             animator.SetTrigger("Hit");
 
 
