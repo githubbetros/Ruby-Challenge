@@ -56,7 +56,8 @@ public class RubyController : MonoBehaviour
             invincibleTimer -= Time.deltaTime;
             if (invincibleTimer < 0)
             {
-                isInvincible = false;            }
+                isInvincible = false;            
+            }
         }
         if (Input.GetKeyDown(KeyCode.C))
         {
@@ -82,8 +83,6 @@ public class RubyController : MonoBehaviour
             isInvincible = true;
 
             animator.SetTrigger("Hit");
-
-
 
             invincibleTimer = timeInvincible;
         }
